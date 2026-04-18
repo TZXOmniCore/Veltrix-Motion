@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Volante exterior -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF8C00"
+        android:strokeWidth="4"
+        android:pathData="M54,20 A34,34 0 1,1 53.99,20 Z"/>
+
+    <!-- Aro interno -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF8C00"
+        android:strokeWidth="2"
+        android:strokeAlpha="0.4"
+        android:pathData="M54,30 A24,24 0 1,1 53.99,30 Z"/>
+
+    <!-- Raio esquerdo -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF8C00"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:pathData="M54,54 L26,42"/>
+
+    <!-- Raio direito -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF8C00"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:pathData="M54,54 L82,42"/>
+
+    <!-- Raio baixo -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF8C00"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:pathData="M54,54 L54,88"/>
+
+    <!-- Hub central -->
+    <path
+        android:fillColor="#FF8C00"
+        android:pathData="M54,46 A8,8 0 1,1 53.99,46 Z"/>
+
+    <!-- Acento laranja brilhante no topo do aro -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFAA33"
+        android:strokeWidth="4"
+        android:strokeAlpha="0.6"
+        android:pathData="M36,28 A24,24 0 0,1 72,28"/>
+
+</vector>
