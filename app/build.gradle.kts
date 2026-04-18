@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace   = "com.gyrodrive"
+    namespace   = "com.veltrixmotion"
     compileSdk  = 35
 
     defaultConfig {
-        applicationId  = "com.gyrodrive"
+        applicationId  = "com.veltrixmotion"
         minSdk         = 26          // API 26: GestureDescription.StrokeDescription.willContinue()
         targetSdk      = 35
         versionCode    = 1
