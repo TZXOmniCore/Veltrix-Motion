@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">GyroDrive</string>
-    <string name="accessibility_service_description">
-        GyroDrive injeta toques no xCloud para simular um controle Xbox completo.
-        O giroscópio controla a direção e os botões virtuais disparam ações no jogo.
-    </string>
-    <string name="channel_id">gyrodrive_overlay</string>
-    <string name="channel_name">GyroDrive Overlay</string>
-    <string name="notification_title">GyroDrive ativo</string>
-    <string name="notification_text">Overlay de controle rodando. Toque para configurar.</string>
+    <string name="app_name">Veltrix Motion</string>
+    <string name="accessibility_service_label">Veltrix Motion Controller</string>
+    <string name="accessibility_service_description">Veltrix Motion injeta toques no xCloud para simular um controle Xbox completo. O giroscópio controla a direção e os botões virtuais disparam ações no jogo.</string>
+    <string name="channel_id">veltrix_overlay</string>
+    <string name="channel_name">Veltrix Motion Overlay</string>
 </resources>
