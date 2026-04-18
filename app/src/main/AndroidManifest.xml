@@ -1,30 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.gyrodrive">
+    package="com.veltrixmotion">
 
-    <!-- Overlay flutuante sobre outros apps -->
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-    <!-- Vibração para feedback tátil -->
     <uses-permission android:name="android.permission.VIBRATE" />
-    <!-- Giroscópio (declarado mas não precisa de permissão runtime) -->
-    <uses-feature android:name="android.hardware.sensor.gyroscope" android:required="true" />
-
-    <!-- Foreground service para manter overlay vivo -->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
 
+    <uses-feature android:name="android.hardware.sensor.gyroscope" android:required="false" />
+
     <application
         android:allowBackup="false"
-        android:label="GyroDrive"
-        android:icon="@drawable/ic_launcher"
-        android:theme="@style/Theme.GyroDrive"
-        android:supportsRtl="true">
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/Theme.VeltrixMotion"
+        android:supportsRtl="false"
+        android:hardwareAccelerated="true"
+        android:largeHeap="false">
 
-        <!-- Activity principal: setup e permissões -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:screenOrientation="landscape"
+            android:screenOrientation="portrait"
             android:configChanges="orientation|screenSize|keyboardHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,7 +30,6 @@
             </intent-filter>
         </activity>
 
-        <!-- Serviço de overlay HUD -->
         <service
             android:name=".OverlayService"
             android:exported="false"
@@ -42,11 +39,10 @@
                 android:value="game_controller_overlay" />
         </service>
 
-        <!-- ★ AccessibilityService: injeta toques reais no xCloud ★ -->
         <service
             android:name=".GyroDriveAccessibilityService"
             android:exported="true"
-            android:label="GyroDrive Controller"
+            android:label="@string/accessibility_service_label"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
             <intent-filter>
                 <action android:name="android.accessibilityservice.AccessibilityService" />
